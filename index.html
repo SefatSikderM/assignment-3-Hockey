@@ -22,7 +22,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
+                  <li><a class="text-orange-500">Home</a></li>
                   <li><a>About</a></li>
                   <li><a>Pages</a></li>
                   <li><a>Blog</a></li>
@@ -32,9 +32,9 @@
               </div>
               <a class="btn btn-ghost text-4xl ">Hockey<span class="text-orange-500 -mx-1 -px-1">'</span>s</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center hidden  lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li><a class="text-orange-500">Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Pages</a></li>
                 <li><a>Blog</a></li>
@@ -45,7 +45,7 @@
                 <img src="Images/Frame.png" alt="">
             </div>
             <div class="navbar-end">
-                <button class="btn btn-error text-white">Get Tickets</button>
+                <button class="btn btn-error text-white hidden md:block ">Get Tickets</button>
             </div>
           </div>
 <!-- background and Slider option -->
@@ -67,21 +67,21 @@
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
               <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-              <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-10/12">
+              <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-3/4">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
               <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-              <div class="absolute flex transform -translate-y-3/4 left-5 right-5 top-10/12">
+              <div class="absolute flex transform -translate-y-3/4 left-5 right-5 top-3/4">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
           </div>
-          <div class="lg:h-[25vh] w-1/2 mx-auto bg-black shadow-lg rounded-lg  -translate-y-60 mr-20 text-white">
-            <h3 class="text-2xl">
+          <div class="hidden md:block lg:h-[25vh] w-1/2 mx-auto bg-black shadow-lg rounded-lg  -translate-y-60 mr-20 text-white text-center mt-8">
+            <h3 class="text-2xl pt-8">
                 Meet all the heroes from the field
 
             </h3>
@@ -132,30 +132,31 @@
             </div>
 
 
-            <div class="flex justify-center text-start text-base items-center gap-8">
-                <div class="card w-96 rounded-lg text-start  shadow-xl image-full">
+            <div class="flex-cols md:block lg:flex justify-center text-start text-base items-center sm:gap-8 md:block lg:gap-3 mt-14">
+                <div class="card w-6/12 mx-auto rounded-lg justify-center text-start  shadow-xl image-full">
                     <figure><img src="Images/2.png" alt="bat" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title font-bold text-3xl text-white justify-center  ">Junior Program</h2>
+                      <h2 class="card-title font-bold text-3xl text-white justify-start  ">Junior Program</h2>
                       <p>For under 16 kids,6 week winter Training</p>
                       <div class="card-actions justify-start">
                         <button class="btn btn-error text-white">Register Now!</button> </div></div>
                     </div> 
 
-                <div class="card w-96 rounded-lg  shadow-xl image-full">
+                <div class="card w-6/12 mx-auto rounded-lg justify-center shadow-xl image-full">
                         <figure><img src="Images/3.png" alt="bat" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title font-bold text-3xl text-white items-center justify-start">Teenager Program</h2>
+                          <h2 class="card-title font-bold text-3xl text-white items-center justify-start p-2 md:block lg:p-0">Teenager Program</h2>
                           <p>For under 16-19,14 week winter Training, amazing spots around Bangladesh</p>
                           <div class="card-actions justify-start">
                             <button class="btn btn-error text-white">Register Now!</button></div>
                         </div>
                 </div>
             </div>  
-            <div class="card w-96 rounded-lg justify-center  shadow-xl image-full">
+            <div class="card w-12/12 mx-auto rounded-lg justify-center  shadow-xl image-full mt-11">
                 <figure><img src="Images/4.png" alt="bat" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title font-bold text-3xl text-white items-center justify-start">Professional Program</h2>
+                  <h2 class="card-title font-bold text-3xl text-white items-end
+                   justify-start">Professional Program</h2>
                   <p>Over 19 and aspirirng to join international tournament</p>
                   <div class="card-actions justify-start">
                     <button class="btn btn-error text-white">Register Now!</button></div>
@@ -174,7 +175,7 @@
                     <h2 class="font-extrabold text-4xl mt-8 ">Our New Products</h2>
                     <p class="font-light text-base mt-3 mb-20">The speed and physicality of the game is unlike any other sport. The skill required to play hockey at a high level is unmatched in any other sport.</p>
                 </div>
-                <div class="flex lg:flex gap-8 ml-8 justify-center justify-around">
+                <div class="flex-cols md:block lg:flex gap-8 ml-1 md:block lg:ml-8 justify-center justify-around">
                     <div>
                         <!-- sec1 -->
                         <!-- 111 -->
@@ -363,12 +364,16 @@
 
             <section>
                 <div>
-                    cli
+                    <div class="text-center items-center mt-20">
+                        <h2 class="font-extrabold text-4xl mt-8 ">Clients Question</h2>
+                        <p class="font-light text-base mt-3 mb-20">We know there are many things which we need to know ,so feel free to email us info@hockeyfrnd.com </p>
+                    </div>
+                    
                 </div>
 
-                <div class="flex">
-                    <div><img src="Images/11.png" alt="" class="w-96"></div>
-                    <div>
+                <div class="flex-cols md:block lg:flex">
+                    <div class="w-full ml-0 md:block lg:ml-20"><img src="Images/11.png" alt="" ></div>
+                    <div class="w-full">
                        
                         <div class="collapse collapse-plus bg-base-200">
                             <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -447,9 +452,123 @@
 
             </section>
 
+            <section>
+                <div>
+                    <div class="text-center items-center mt-20">
+                        <h2 class="font-extrabold text-4xl mt-8 ">Clients Question</h2>
+                        <p class="font-light text-base mt-3 mb-20">We know there are many things which we need to know ,so feel free to email us info@hockeyfrnd.com </p>
+                </div>
+
+                <div>
+                    <div class="flex-cols md:block lg:flex gap-8">
+                        <!-- Contacts part -->
+                        <div>
+                            <div class="bg-stone-200 rounded-lg gap-8 ml-0 md:block lg:ml-20 p-8">
+                                <img src="Images/Group 1171275317.png" alt="">
+                                <p>Phone Number :</p>
+                                <p> <strong>(+62) 123-321-543</strong></p>
+                            </div>
+                            <div class="bg-stone-200 rounded-lg gap-8 ml-0 md:block lg:ml-20 p-8">
+                                <img src="Images/Group 1171275318.png" alt="">
+                                <p>Email:</p>
+                                <p> <strong> hockeys@support.com</strong></p>
+                            </div>
+                            <div class="bg-stone-200 mx-auto bg-auto
+                             rounded-lg gap-8 ml-0 md:block lg:ml-20 p-8">
+                                <img src="Images/Group 1171275321.png" alt="">
+                                <p> Location : </p>  
+                                <p> <strong> Location : 152/1 Mohakhali Wireless Gate</strong></p>
+
+                            </div>
+                        </div>
+                        <!-- input part -->
+                        <div>
+                            <div>
+                                <div class=" flex-cols md:block lg:flex gap-3">
+                                    <div><label class="form-control w-full max-w-xs">
+                                        <div class="label">
+                                          <span class="label-text text-lg font-bold">Your Name</span>
+                                          
+                                        </div>
+                                        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
+                                
+                                      </label></div>
+                                      <div><label class="form-control w-full max-w-xs">
+                                        <div class="label">
+                                          <span class="label-text text-lg font-bold ">Your Email</span>
+                                         
+                                        </div>
+                                        <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs" />
+                                        
+                                      </label></div>
+                                </div>
+                                <div class=" flex-cols md:block lg:flex gap-3">
+                                    <div><label class="form-control w-full max-w-xs">
+                                        <div class="label">
+                                          <span class="text-lg font-bold label-text">Subject</span>
+                                          
+                                        </div>
+                                        <input type="text" placeholder="Enter Your Subject" class="input input-bordered w-full max-w-xs" />
+                                        
+                                      </label></div>
+                                    <div><label class="form-control w-full max-w-xs">
+                                        <div class="label">
+                                          <span class="text-lg font-bold label-text">Phone Number</span>
+                                         
+                                        </div>
+                                        <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
+                                        
+                                      </label></div>
+                                </div>
+                            </div>
+                            <!-- big input part  -->
+                            <div>
+                                 <h5 class="text-lg font-bold">Message</h5>
+                                <textarea placeholder="Write Down the message" class="textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
+
+                            </div>
+                            <button class="btn btn-block text-white bg-[#FF4240]">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-center text-start">
+                    <h3 class="text-xl text-black font-bold">Social Media</h3>
+                    <img src="Images/Social.png" alt="" class="p-10">
+                </div>
+            </section>
+
         
     </main>
     <footer>
+        <footer class="footer p-10 bg-[#131318] text-white">
+            <aside>
+            
+              <p class="text-lg font-bold"><strong>Get in Touch</strong>.<br>To know about us and our works
+            <br>hockeys@support.com <br>(+62) 123-321-543
+        </p>
+            </aside> 
+            <nav>
+              <h6 class="footer-title">Services</h6> 
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Company</h6> 
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Legal</h6> 
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
 
 
     </footer>
